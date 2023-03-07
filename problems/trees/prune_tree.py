@@ -21,7 +21,7 @@ def prune_tree(tree, keys_to_discard):
     for i, child in enumerate(copy.children):
         if child in keys_to_discard:
             del copy.children[i]
-        copy.children[i] = prune_tree(child)
+        copy.children[i] = prune_tree(child, keys_to_discard)
     
     return copy
 
