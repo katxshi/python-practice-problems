@@ -16,7 +16,7 @@ def min_depth_leaf(tree):
     else:
         overall_min = []
         for child in tree.children:
-            overall_min.append[min_depth_tree(child)]
+            overall_min.append[min_depth_leaf(child)]
         return min(overall_min) + 1
 
 
