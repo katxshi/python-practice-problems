@@ -8,12 +8,12 @@ def sublists(lst):
     """
 
     if lst == []:
-        return [[]]
+        return []
     first, *rest = lst
-    temp = sublists(*rest)
-    for each in sublists(*rest):
+    temp = sublists(rest)
+    for each in temp:
         temp += [first + each]
-    return temp
+    return [temp]
 
 
 #############################################################
