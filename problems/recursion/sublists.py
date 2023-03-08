@@ -12,7 +12,7 @@ def sublists(lst):
     first, *rest = lst
     temp = sublists(rest)
     for each in temp:
-        temp += [first] + each
+        temp += [[first] + each]
     return [temp]
 
 
